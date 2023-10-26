@@ -100,8 +100,8 @@ If you get stuck, you may wish to review the following lessons from the course:
 
 - The toast component should show the message entered in the textarea, essentially acting as a “live preview”.
 - The toast's styling should be affected by the “variant” selected:
-  - The colors can be set by specifying the appropriate class on the top-level `<div>`. By default, it's set to `styles.notice`, but you'll want to dynamically select the class based on the variant (eg. for a success toast, you'll want to apply `styles.success`).
-  - The icon can be selected from the `ICONS_BY_VARIANT` object. Feel free to re-organize things however you wish!
+- The colors can be set by specifying the appropriate class on the top-level `<div>`. By default, it's set to `styles.notice`, but you'll want to dynamically select the class based on the variant (eg. for a success toast, you'll want to apply `styles.success`).
+- The icon can be selected from the `ICONS_BY_VARIANT` object. Feel free to re-organize things however you wish!
 - The toast should be hidden by default, but can be shown by clicking the "Pop Toast!” button.
 - The toast can be hidden by clicking the “×” button within the toast.
 
@@ -110,7 +110,6 @@ If you get stuck, you may wish to review the following lessons from the course:
 ## Exercise 3: Toast shelf
 
 One of the core defining characteristics of toast notifications is that they stack!
-
 ![Several toasts popping up, one after another](./docs/poppin-toasts.gif)
 
 Your mission in this exercise is to restructure things so that our `ToastPlayground` allows us to create _multiple_ toasts.
@@ -186,7 +185,7 @@ Let's try something. Pretend that you don't have a mouse or trackpad. Using the 
 
 **How do I do this?** You'll use the “Tab” key to move focus between interactive elements. You can hold "Shift" and hit "Tab" to move backwards. In order to dismiss the toasts, you'll need to keep tabbing until your focus reaches the close button. Then, hit "Enter".
 
-> NOTE: If you're using Safari or Firefox on MacOS, you'll need to toggle a system setting to allow tabs to focus on buttons. Read more here: https://www.scottohara.me/blog/2014/10/03/link-tabbing-firefox-osx.html
+> NOTE: If you're using Safari or Firefox on MacOS, you'll need to toggle a system setting to allow tabs to focus on buttons. Read more here: https://www.scottoha ra.me/blog/2014/10/03/link-tabbing-firefox-osx.html
 
 ---
 
@@ -280,6 +279,7 @@ useEscapeKey(() => {
 **This is an open-ended exercise.** Feel free to experiment with different APIs and see what works best for you!
 
 **Acceptance Criteria:**
+ooks
 
 - We want to create a new generic hook that makes it easy to listen for `keydown` events in React. It's up to you to come up with the best “consumer experience”.
 - Because this is a generic hook, it shouldn't be stored with the `ToastProvider` component. Create a new `/src/hooks` directory, and place your new hook in there.
